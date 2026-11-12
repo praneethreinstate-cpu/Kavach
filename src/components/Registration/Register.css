@@ -1,0 +1,307 @@
+
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #faf8f3;
+  color: #183025;
+  font-family: "DM Sans", sans-serif;
+}
+
+.register-header {
+  height: 80px;
+  margin: 0 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.register-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #183025;
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.register-logo svg,
+.register-gold {
+  color: #ad8c45;
+}
+
+.register-back {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #183025;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.register-main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 27% 48% 25%;
+  align-items: center;
+  padding: 35px 0 65px;
+}
+
+.register-left {
+  padding-left: 20%;
+}
+
+.register-label {
+  color: #ad8c45;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.register-left h1 {
+  font-size: clamp(34px, 3.5vw, 53px);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+  margin: 30px 0;
+}
+
+.register-left em {
+  color: #ad8c45;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+
+.register-left > p:last-child,
+.register-right > p:last-child {
+  color: #898b80;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.register-center {
+  display: flex;
+  justify-content: center;
+  min-width: 0;
+}
+
+.register-panel {
+  width: min(420px, 85%);
+  padding: 38px 35px;
+  border: 1px solid #e3d8bd;
+  border-radius: 180px 180px 12px 12px;
+  background: #faf8f3;
+  text-align: center;
+}
+
+.register-lock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  color: #ad8c45;
+  margin: 8px 0 22px;
+}
+
+.register-lock span {
+  width: 45px;
+  height: 1px;
+  background: #cdbb91;
+}
+
+.register-panel h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(26px, 2.5vw, 36px);
+  font-weight: 400;
+  margin: 14px 0 8px;
+}
+
+.register-subtitle {
+  color: #898b80;
+  font-size: 12px;
+  margin-bottom: 25px;
+}
+
+.register-panel form {
+  text-align: left;
+}
+
+.register-panel label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  margin: 17px 0 8px;
+}
+
+.register-panel input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #bcbcb0;
+  border-radius: 0;
+  outline: none;
+  background: transparent;
+  color: #183025;
+  font: inherit;
+  font-size: 12px;
+}
+
+.register-panel input:focus {
+  border-bottom-color: #ad8c45;
+}
+
+.register-password {
+  position: relative;
+}
+
+.register-password input {
+  padding-right: 40px;
+}
+
+.register-password button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 40px;
+  width: 36px;
+  border: 0;
+  background: transparent;
+  color: #68735e;
+  cursor: pointer;
+}
+
+.register-hint {
+  color: #898b80;
+  font-size: 10px;
+  margin: 8px 0 0;
+}
+
+.register-submit {
+  width: 100%;
+  height: 49px;
+  margin-top: 28px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  border-radius: 4px;
+  background: #263c29;
+  color: white;
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.register-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+  color: #898b80;
+  font-size: 11px;
+}
+
+.register-divider::before,
+.register-divider::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: #c9c4b5;
+}
+
+.register-google {
+  width: 100%;
+  height: 45px;
+  margin-top: 18px;
+  border: 1px solid #c5bba5;
+  border-radius: 4px;
+  background: transparent;
+  color: #183025;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.register-google:hover {
+  background: #f0ede4;
+}
+
+.register-signin {
+  color: #898b80;
+  font-size: 12px;
+  margin: 23px 0 0;
+}
+
+.register-signin a {
+  color: #183025;
+  text-underline-offset: 4px;
+}
+
+.register-message {
+  color: #657852;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.register-right {
+  padding-left: 15%;
+}
+
+.register-orbit {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #cbb783;
+  border-radius: 50%;
+  color: #ad8c45;
+  margin-bottom: 25px;
+}
+
+.register-footer {
+  min-height: 50px;
+  margin: 0 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #73786c;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+}
+
+@media (max-width: 1000px) {
+  .register-main {
+    grid-template-columns: 1fr;
+  }
+
+  .register-left,
+  .register-right {
+    display: none;
+  }
+
+  .register-panel {
+    width: min(420px, 92%);
+  }
+}
+
+@media (max-width: 480px) {
+  .register-header {
+    height: 70px;
+  }
+
+  .register-logo {
+    font-size: 24px;
+  }
+
+  .register-panel {
+    padding: 35px 22px;
+    border-radius: 120px 120px 12px 12px;
+  }
+
+  .register-panel h2 {
+    font-size: 26px;
+  }
+}
