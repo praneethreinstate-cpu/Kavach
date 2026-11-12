@@ -1,0 +1,244 @@
+
+.recovery-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #faf8f3;
+  color: #183025;
+  font-family: "DM Sans", sans-serif;
+}
+
+.recovery-header {
+  height: 80px;
+  margin: 0 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.recovery-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #183025;
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.recovery-logo svg,
+.recovery-gold {
+  color: #ad8c45;
+}
+
+.recovery-header-label {
+  color: #8b805e;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.recovery-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 35px 20px 65px;
+}
+
+.recovery-panel {
+  width: min(100%, 510px);
+  text-align: center;
+}
+
+.recovery-icon {
+  width: 76px;
+  height: 76px;
+  margin: 0 auto 25px;
+  display: grid;
+  place-items: center;
+  color: #ad8c45;
+  border: 1px solid #d7c7a3;
+  border-radius: 50%;
+  box-shadow: 0 0 0 8px #f1ede3;
+}
+
+.recovery-overline {
+  color: #ad8c45;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+
+.recovery-panel h1 {
+  margin: 15px 0;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(35px, 5vw, 51px);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.recovery-panel h1 em {
+  color: #ad8c45;
+  font-weight: 400;
+}
+
+.recovery-description {
+  max-width: 420px;
+  margin: 0 auto 30px;
+  color: #77796f;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.recovery-code-box {
+  padding: 25px 22px;
+  border: 1px solid #d8c8a7;
+  border-radius: 8px;
+  background: #f3efe5;
+}
+
+.recovery-code-label {
+  color: #897345;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.recovery-code {
+  margin: 20px 0;
+  color: #183025;
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+.recovery-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.recovery-actions button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: 1px solid #bdae8d;
+  border-radius: 4px;
+  background: transparent;
+  color: #183025;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.recovery-actions button:hover {
+  background: #e9e1cf;
+}
+
+.recovery-warning {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin: 24px 0;
+  padding: 16px;
+  border: 1px solid #e0d3b5;
+  border-radius: 6px;
+  text-align: left;
+}
+
+.recovery-warning svg {
+  flex-shrink: 0;
+  color: #ad8c45;
+}
+
+.recovery-warning p {
+  margin: 0;
+  color: #77796f;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.recovery-warning strong {
+  color: #183025;
+}
+
+.recovery-confirm {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 22px 0;
+  color: #183025;
+  font-size: 12px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.recovery-confirm input {
+  width: 17px;
+  height: 17px;
+  accent-color: #263c29;
+  cursor: pointer;
+}
+
+.recovery-continue {
+  width: 100%;
+  height: 53px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 0;
+  border-radius: 4px;
+  background: #263c29;
+  color: white;
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.recovery-continue:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.recovery-continue:not(:disabled):hover {
+  background: #38513a;
+}
+
+.recovery-footnote {
+  margin-top: 20px;
+  color: #898b80;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.recovery-footer {
+  min-height: 50px;
+  margin: 0 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #73786c;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+}
+
+@media (max-width: 480px) {
+  .recovery-header-label {
+    display: none;
+  }
+
+  .recovery-code {
+    font-size: 13px;
+  }
+
+  .recovery-actions {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,201 @@
+
+.ks-container {
+  max-width: 900px;
+  color: #263c29;
+}
+
+.ks-heading {
+  margin-bottom: 28px;
+}
+
+.ks-eyebrow {
+  color: #ad8c45;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.ks-heading h1 {
+  margin: 10px 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 42px;
+  font-weight: 400;
+}
+
+.ks-heading > p:last-child {
+  color: #85897f;
+  font-size: 13px;
+}
+
+.ks-demo-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 15px;
+  margin-bottom: 25px;
+  background: #f4eee0;
+  border: 1px solid #e1d4b8;
+  border-radius: 8px;
+  color: #806b3c;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.ks-demo-note svg {
+  flex-shrink: 0;
+}
+
+.ks-message {
+  padding: 12px 15px;
+  background: #eaf0e6;
+  border-radius: 6px;
+  color: #38513a;
+  font-size: 13px;
+}
+
+.ks-card {
+  margin-bottom: 22px;
+  padding: 28px;
+  background: #fffdf9;
+  border: 1px solid #e7e2d7;
+  border-radius: 12px;
+}
+
+.ks-card-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 23px;
+}
+
+.ks-card-heading > svg {
+  color: #ad8c45;
+  margin-top: 4px;
+}
+
+.ks-card-heading h2 {
+  margin: 0 0 6px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.ks-card-heading p {
+  margin: 0;
+  color: #85897f;
+  font-size: 12px;
+}
+
+.ks-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 520px;
+}
+
+.ks-form label {
+  margin: 14px 0 8px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.ks-form input,
+.ks-form select {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 13px;
+  border: 1px solid #ded8ca;
+  border-radius: 6px;
+  outline: none;
+  background: #faf8f3;
+  color: #263c29;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+.ks-form input:focus,
+.ks-form select:focus {
+  border-color: #ad8c45;
+}
+
+.ks-primary {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  margin-top: 22px;
+  padding: 13px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #263c29;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ks-primary:hover {
+  background: #3c553e;
+}
+
+.ks-password-field {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.ks-password-field input {
+  padding-right: 48px;
+}
+
+.ks-password-field button {
+  position: absolute;
+  right: 8px;
+  display: grid;
+  place-items: center;
+  padding: 8px;
+  border: 0;
+  background: transparent;
+  color: #85897f;
+  cursor: pointer;
+}
+
+.ks-helper {
+  color: #85897f;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.ks-theme-options {
+  display: flex;
+  gap: 12px;
+}
+
+.ks-theme-options button {
+  padding: 13px 27px;
+  border: 1px solid #ded8ca;
+  border-radius: 7px;
+  background: #faf8f3;
+  color: #263c29;
+  cursor: pointer;
+}
+
+.ks-theme-options .ks-theme-selected {
+  border-color: #263c29;
+  background: #263c29;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .ks-heading h1 {
+    font-size: 32px;
+  }
+
+  .ks-card {
+    padding: 20px;
+  }
+
+  .ks-theme-options {
+    flex-wrap: wrap;
+  }
+}
